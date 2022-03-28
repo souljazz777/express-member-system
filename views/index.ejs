@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊系統頁面</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text{
+            position: relative;
+            left: 40%;
+            top: 40%;
+        }
+        .text #btn{
+            /* display: flex;
+            justify-content: center;
+            align-items: center;  */
+            position: relative;
+            left: 8%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>註冊會員系統</h1>
+    <form action="/signup" class="text" method="post">
+        註冊姓名: <input type="text" name="name"><br>
+        註冊信箱: <input type="text" name="email" id="email"><br>
+        註冊密碼: <input type="password" name="password" id="password"><br> 
+        <button id="btn">註冊會員</button>
+    </form>
+    <br>
+    <h1>登入會員系統</h1>
+    <form action="/signin" class="text" method="post">
+        輸入信箱: <input type="text" name="email"><br>
+        輸入密碼: <input type="password" name="password"><br>
+        <button>會員登入</button> 
+    </form>
+</body>
+</html>
